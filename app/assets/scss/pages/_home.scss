@@ -1,33 +1,183 @@
 @import '../utils/variables';
 
-$color: #00cc99;
-$fz40: 40px;
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
+.outerWrap{
+  max-width: 1920px;
+  font-style: italic;
 }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-h1{
-  font-weight: $black;
-  font-size: $fz40;
+h2 {
   padding-top: $h2-pt;
+  font-size: $h2-fz;
+  font-weight: $medium;
+  line-height: 84px;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+.banner{
+  height: 100vh;
   display: flex;
-  transition: all 0.5s;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-image: url(../../../assets/images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .bannerText{
+    .bannerStart{
+      padding: 0;
+      font-size: $pLarge-fz;
+      font-weight: $bold;
+      line-height: $p-lh-large;
+    }
+    h1{
+      font-size: 80px;
+      font-weight: 900;
+      line-height: 106px;
+    }
+    .slogan{
+      display: flex;
+      justify-content: center;
+      padding-top: 32px;
+      padding-bottom: 40px;
+      font-size: $pLarge-fz;
+      font-weight: $bold;
+      line-height: $p-lh-medium;
+    }
+    .bannerList{
+      display: flex;
+      justify-content: space-around;
+      a{
+        &:hover{
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
 
-  &:hover {
-    width: 200px;
-    background-color: $color;
+.info{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  img{
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  p{
+    font-size: $pLarge-fz;
+    font-weight: $bold;
+    line-height: $p-lh-large;
+  }
+  .education{
+    padding-bottom: 23px;
+    line-height: $p-lh-medium;
+    border-bottom: 1px solid #000000;
+  }
+  .aboutList{
+    padding: 28px 0;
+  }
+  .aboutItem{
+    padding-bottom: $aboutLi-padding;
+    p{
+      &::before{
+        content: '';
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-right: 16px;
+        background-color: #891818;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.introduction{
+  display: flex;
+  justify-content: center;
+  font-weight: $medium;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  .brandSlogan{
+    padding: 12px 0 32px 0;
+    font-size: $pLarge-fz;
+    line-height: $p-lh-large;
+  }
+  .brandStory{
+    padding-bottom: 68px;
+    font-size: $pSmall-fz;
+    font-style: normal;
+    line-height: $p-lh-small;
+  }
+  .brandList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brandItem-secondRow{
+    display: flex;
+    padding: 40px 0 160px 0;
+    img{
+      padding-right: 24px;
+    }
+  }
+}
+
+
+.work{
+  display: flex;
+  justify-content: center;
+}
+
+.collection{
+  text-align: center;
+  margin-bottom: 96px;
+  .workIntro{
+    padding: 16px 0 56px;
+    font-size: $pSmall-fz;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: $p-lh-small;
+  }
+  .workItem{
+    display: flex;
+    gap: 24px;
+    padding-bottom: $workLi-pb;
+    .imgText{
+      font-size: $pSmall-fz;
+      font-weight: $medium;
+      font-style: normal;
+      line-height: $p-lh-large;
+      img{
+        padding-bottom: $imgText-between;
+      }
+    }
+  }
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 64px;
+  align-items: center;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  a{
+    margin-top: 16px;
+    font-size: $pLarge-fz;
+    line-height: $p-lh-medium;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    &:hover{
+      border-bottom: 1px solid #00ffff;
+    }
   }
 }
