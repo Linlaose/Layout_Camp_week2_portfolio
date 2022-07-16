@@ -1,4 +1,7 @@
+@import '../utils/variables';
+
 $color: #00cc99;
+$fz40: 40px;
 
 .header {
   height: 200px;
@@ -8,6 +11,12 @@ $color: #00cc99;
 .footer {
   height: 200px;
   background-color: #00cc99;
+}
+
+h1{
+  font-weight: $black;
+  font-size: $fz40;
+  padding-top: $h2-pt;
 }
 
 .box {
