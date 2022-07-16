@@ -160,24 +160,3 @@ h2 {
     }
   }
 }
-
-footer{
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 64px;
-  align-items: center;
-  font-style: italic;
-  text-align: center;
-  color: #fff;
-  background: #000;
-  a{
-    margin-top: 16px;
-    font-size: $pLarge-fz;
-    line-height: $p-lh-medium;
-    color: #fff;
-    border-bottom: 1px solid transparent;
-    &:hover{
-      border-bottom: 1px solid #00ffff;
-    }
-  }
-}
