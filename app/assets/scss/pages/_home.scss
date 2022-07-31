@@ -26,6 +26,7 @@ h2 {
   background-position: center center;
   .bannerText{
     .bannerStart{
+      display: block;
       padding: 0;
       font-size: $pLarge-fz;
       font-weight: $bold;
@@ -62,12 +63,12 @@ h2 {
   justify-content: center;
   text-align: center;
   .about{
-    display: flex;
-    flex-direction: column;
+    text-align: center;
   }
   img{
     padding-top: 40px;
     padding-bottom: 20px;
+    margin: 0 auto;
   }
   p{
     font-size: $pLarge-fz;
@@ -99,8 +100,6 @@ h2 {
 }
 
 .introduction{
-  display: flex;
-  justify-content: center;
   font-weight: $medium;
   text-align: center;
   color: #fff;
@@ -128,12 +127,6 @@ h2 {
       padding-right: 24px;
     }
   }
-}
-
-
-.work{
-  display: flex;
-  justify-content: center;
 }
 
 .collection{

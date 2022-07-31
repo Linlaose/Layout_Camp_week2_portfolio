@@ -1,12 +1,13 @@
 footer {
-  display: flex;
-  flex-direction: column;
   padding-bottom: 64px;
-  align-items: center;
   font-style: italic;
   text-align: center;
   color: #fff;
   background: #000;
+
+  .contact{
+    display: inline-block;
+  }
 
   a {
     margin-top: 16px;
