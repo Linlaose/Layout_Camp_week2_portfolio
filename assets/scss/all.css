@@ -145,6 +145,28 @@ a {
   display: block;
   text-decoration: none; }
 
+.container {
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto; }
+
+footer {
+  padding-bottom: 64px;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  background: #000; }
+  footer .contact {
+    display: inline-block; }
+  footer a {
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    border-bottom: 1px solid transparent; }
+    footer a:hover {
+      border-bottom: 1px solid #00ffff; }
+
 .outerWrap {
   max-width: 1920px;
   margin: 0 auto;
@@ -173,6 +195,7 @@ h2 {
   background-size: cover;
   background-position: center center; }
   .banner .bannerText .bannerStart {
+    display: block;
     padding: 0;
     font-size: 24px;
     font-weight: 700;
@@ -211,16 +234,11 @@ h2 {
           justify-content: center;
   text-align: center; }
   .info .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    text-align: center; }
   .info img {
     padding-top: 40px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    margin: 0 auto; }
   .info p {
     font-size: 24px;
     font-weight: 700;
@@ -243,12 +261,6 @@ h2 {
       border-radius: 50%; }
 
 .introduction {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -281,14 +293,6 @@ h2 {
     .introduction .brandItem-secondRow img {
       padding-right: 24px; }
 
-.work {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .collection {
   text-align: center;
   margin-bottom: 96px; }
@@ -311,30 +315,5 @@ h2 {
       line-height: 42px; }
       .collection .workItem .imgText img {
         padding-bottom: 16px; }
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 64px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-style: italic;
-  text-align: center;
-  color: #fff;
-  background: #000; }
-  footer a {
-    margin-top: 16px;
-    font-size: 24px;
-    line-height: 36px;
-    color: #fff;
-    border-bottom: 1px solid transparent; }
-    footer a:hover {
-      border-bottom: 1px solid #00ffff; }
 
 /*# sourceMappingURL=all.css.map */
